@@ -1,4 +1,3 @@
-
 /**
  * SciFiName gathers input from a user to generate a custom name that
  * sounds like it could be used in a science fiction book or movie.
@@ -34,9 +33,13 @@ public class SciFiName
         String relativeName1 = UserInput.getString();
         System.out.print("Enter the first name of a second sibling or relative: ");
         String relativeName2 = UserInput.getString();
-
+        
+        
+        
         // generate a sciFi name
    
+        System.out.println("Your Sci-Fi name is " + firstName.substring(0,3) + lastName.substring(0,2) + " " + city.substring(0,2) + school.substring(0,3) + " of " ); 
+        System.out.println(relativeName1.substring((int) Math.random() * relativeName1.length(), relativeName1.length()));
         
     }
 }
